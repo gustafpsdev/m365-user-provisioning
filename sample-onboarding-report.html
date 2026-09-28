@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Onboarding — Provisionamento</title>
+<style>
+  :root{--bg:#f4f6fb;--card:#fff;--ink:#1a2233;--muted:#5b6678;--line:#e6e9f0;--brand:#2f5bea;--green:#22a06b;--red:#e5484d}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Segoe UI",system-ui,-apple-system,Arial,sans-serif;line-height:1.5}
+  .wrap{max-width:960px;margin:0 auto;padding:32px 20px 64px}
+  h1{font-size:1.5rem;margin:0}.sub{color:var(--muted);font-size:.9rem;margin-top:4px}
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin:20px 0}
+  .kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;text-align:center}
+  .kpi .value{font-size:1.8rem;font-weight:800}.kpi.green .value{color:var(--green)}.kpi.red .value{color:var(--red)}
+  .kpi .label{color:var(--muted);font-size:.72rem;text-transform:uppercase;letter-spacing:.03em;margin-top:2px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:12px 0}
+  .c-head{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+  .pname{font-weight:700;font-size:1.05rem;margin-right:10px}.upn{color:var(--brand);font-family:"Consolas",monospace;font-size:.9rem}
+  .dep{background:#eef1f8;color:var(--muted);font-size:.75rem;padding:3px 10px;border-radius:999px;text-transform:uppercase;letter-spacing:.03em}
+  .meta{color:#333;font-size:.9rem;margin:8px 0}
+  .groups{margin:6px 0 10px}
+  .chip{display:inline-block;background:#e9eefc;color:var(--brand);font-size:.78rem;padding:2px 10px;border-radius:6px;margin:2px 4px 2px 0}
+  ul.steps{list-style:none;margin:0;padding:0;font-size:.9rem}
+  ul.steps li{padding:4px 0;border-top:1px solid var(--line)}
+  ul.steps li .mk{display:inline-block;width:18px;font-weight:800}
+  ul.steps li.ok .mk{color:var(--green)} ul.steps li.fail .mk{color:var(--red)}
+  footer{color:var(--muted);font-size:.8rem;text-align:center;margin-top:26px}
+</style></head><body><div class="wrap">
+  <h1>Onboarding &mdash; Provisionamento de Usuários</h1>
+  <div class="sub">Lote de demonstração (fictício) &middot; gerado em 22/09/2026 13:34</div>
+
+  <div class="kpis">
+    <div class="kpi green"><div class="value">4</div><div class="label">Colaboradores</div></div>
+    <div class="kpi"><div class="value">4</div><div class="label">Licenças atribuídas</div></div>
+    <div class="kpi"><div class="value">13</div><div class="label">Vínculos de grupo</div></div>
+    <div class="kpi red"><div class="value">0</div><div class="label">Falhas</div></div>
+  </div>
+
+    <div class="card">
+      <div class="c-head">
+        <div><span class="pname">Ana Ribeiro</span><span class="upn">ana.ribeiro@contoso-demo.onmicrosoft.com</span></div>
+        <span class="dep">Financeiro</span>
+      </div>
+      <div class="meta">Cargo: <b>Analista Financeiro</b> &middot; Gestor: <b>Carlos Mendes</b> &middot; Licença: <b>Microsoft 365 E3</b></div>
+      <div class="groups"><span class='chip'>Todos-Colaboradores</span> <span class='chip'>Financeiro</span> <span class='chip'>VPN-Users</span></div>
+      <ul class="steps"><li class='ok'><span class='mk'>&#10003;</span> <b>Conta criada:</b> ana.ribeiro@contoso-demo.onmicrosoft.com</li><li class='ok'><span class='mk'>&#10003;</span> <b>Licença atribuída:</b> Microsoft 365 E3</li><li class='ok'><span class='mk'>&#10003;</span> <b>Grupos adicionados:</b> Todos-Colaboradores, Financeiro, VPN-Users</li><li class='ok'><span class='mk'>&#10003;</span> <b>Gestor definido:</b> Carlos Mendes</li><li class='ok'><span class='mk'>&#10003;</span> <b>Boas-vindas geradas:</b> senha temporária + guia</li></ul>
+    </div>
+    <div class="card">
+      <div class="c-head">
+        <div><span class="pname">Bruno Alves</span><span class="upn">bruno.alves@contoso-demo.onmicrosoft.com</span></div>
+        <span class="dep">TI</span>
+      </div>
+      <div class="meta">Cargo: <b>Analista de Suporte</b> &middot; Gestor: <b>Gustavo Paiva</b> &middot; Licença: <b>Microsoft 365 E5</b></div>
+      <div class="groups"><span class='chip'>Todos-Colaboradores</span> <span class='chip'>TI-Equipe</span> <span class='chip'>VPN-Users</span> <span class='chip'>Admins-Locais</span></div>
+      <ul class="steps"><li class='ok'><span class='mk'>&#10003;</span> <b>Conta criada:</b> bruno.alves@contoso-demo.onmicrosoft.com</li><li class='ok'><span class='mk'>&#10003;</span> <b>Licença atribuída:</b> Microsoft 365 E5</li><li class='ok'><span class='mk'>&#10003;</span> <b>Grupos adicionados:</b> Todos-Colaboradores, TI-Equipe, VPN-Users, Admins-Locais</li><li class='ok'><span class='mk'>&#10003;</span> <b>Gestor definido:</b> Gustavo Paiva</li><li class='ok'><span class='mk'>&#10003;</span> <b>Boas-vindas geradas:</b> senha temporária + guia</li></ul>
+    </div>
+    <div class="card">
+      <div class="c-head">
+        <div><span class="pname">Carla Souza</span><span class="upn">carla.souza@contoso-demo.onmicrosoft.com</span></div>
+        <span class="dep">Comercial</span>
+      </div>
+      <div class="meta">Cargo: <b>Executiva de Vendas</b> &middot; Gestor: <b>Fernanda Lima</b> &middot; Licença: <b>Microsoft 365 E3</b></div>
+      <div class="groups"><span class='chip'>Todos-Colaboradores</span> <span class='chip'>Comercial</span> <span class='chip'>CRM-Users</span></div>
+      <ul class="steps"><li class='ok'><span class='mk'>&#10003;</span> <b>Conta criada:</b> carla.souza@contoso-demo.onmicrosoft.com</li><li class='ok'><span class='mk'>&#10003;</span> <b>Licença atribuída:</b> Microsoft 365 E3</li><li class='ok'><span class='mk'>&#10003;</span> <b>Grupos adicionados:</b> Todos-Colaboradores, Comercial, CRM-Users</li><li class='ok'><span class='mk'>&#10003;</span> <b>Gestor definido:</b> Fernanda Lima</li><li class='ok'><span class='mk'>&#10003;</span> <b>Boas-vindas geradas:</b> senha temporária + guia</li></ul>
+    </div>
+    <div class="card">
+      <div class="c-head">
+        <div><span class="pname">Diego Santos</span><span class="upn">diego.santos@contoso-demo.onmicrosoft.com</span></div>
+        <span class="dep">Loja</span>
+      </div>
+      <div class="meta">Cargo: <b>Vendedor</b> &middot; Gestor: <b>Paulo Rocha</b> &middot; Licença: <b>Office 365 E3</b></div>
+      <div class="groups"><span class='chip'>Todos-Colaboradores</span> <span class='chip'>Lojas</span> <span class='chip'>PDV-Users</span></div>
+      <ul class="steps"><li class='ok'><span class='mk'>&#10003;</span> <b>Conta criada:</b> diego.santos@contoso-demo.onmicrosoft.com</li><li class='ok'><span class='mk'>&#10003;</span> <b>Licença atribuída:</b> Office 365 E3</li><li class='ok'><span class='mk'>&#10003;</span> <b>Grupos adicionados:</b> Todos-Colaboradores, Lojas, PDV-Users</li><li class='ok'><span class='mk'>&#10003;</span> <b>Gestor definido:</b> Paulo Rocha</li><li class='ok'><span class='mk'>&#10003;</span> <b>Boas-vindas geradas:</b> senha temporária + guia</li></ul>
+    </div>
+
+  <footer>Gerado por <b>New-Employee.ps1</b> &middot; Provisionamento M365 &middot; Gustavo Paiva</footer>
+</div></body></html>

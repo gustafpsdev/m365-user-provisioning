@@ -1,0 +1,35 @@
+{
+  "_comment": "Provisionamento baseado em cargo: cada departamento define a licenca e os grupos que o novo colaborador recebe. Edite conforme o seu tenant.",
+  "dominio": "contoso-demo.onmicrosoft.com",
+  "skuNomes": {
+    "SPE_E5": "Microsoft 365 E5",
+    "SPE_E3": "Microsoft 365 E3",
+    "ENTERPRISEPACK": "Office 365 E3"
+  },
+  "departamentos": {
+    "TI": {
+      "licenca": "SPE_E5",
+      "grupos": ["Todos-Colaboradores", "TI-Equipe", "VPN-Users", "Admins-Locais"]
+    },
+    "Financeiro": {
+      "licenca": "SPE_E3",
+      "grupos": ["Todos-Colaboradores", "Financeiro", "VPN-Users"]
+    },
+    "Comercial": {
+      "licenca": "SPE_E3",
+      "grupos": ["Todos-Colaboradores", "Comercial", "CRM-Users"]
+    },
+    "RH": {
+      "licenca": "SPE_E3",
+      "grupos": ["Todos-Colaboradores", "RH", "VPN-Users"]
+    },
+    "Loja": {
+      "licenca": "ENTERPRISEPACK",
+      "grupos": ["Todos-Colaboradores", "Lojas", "PDV-Users"]
+    },
+    "_default": {
+      "licenca": "ENTERPRISEPACK",
+      "grupos": ["Todos-Colaboradores"]
+    }
+  }
+}

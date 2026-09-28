@@ -1,0 +1,14 @@
+{
+  "_meta": {
+    "note": "Colaboradores ficticios para demonstracao. Nenhuma pessoa real."
+  },
+  "admissoes": [
+    { "nome": "Ana Ribeiro",   "departamento": "Financeiro", "cargo": "Analista Financeiro",  "gestor": "Carlos Mendes" },
+    { "nome": "Bruno Alves",   "departamento": "TI",         "cargo": "Analista de Suporte",  "gestor": "Gustavo Paiva" },
+    { "nome": "Carla Souza",   "departamento": "Comercial",  "cargo": "Executiva de Vendas",  "gestor": "Fernanda Lima" },
+    { "nome": "Diego Santos",  "departamento": "Loja",       "cargo": "Vendedor",             "gestor": "Paulo Rocha" }
+  ],
+  "desligamentos": [
+    { "nome": "Marcos Vidal",  "departamento": "TI",         "motivo": "pedido de demissao" }
+  ]
+}
